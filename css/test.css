@@ -38,6 +38,7 @@ section {
     padding: 5em 2em;
 }
 
+
 h1,
 h2,
 h3 {
@@ -180,6 +181,7 @@ nav a:hover {
 
 }
 
+
 .section__title--intro {
     font-weight: var(--fw-reg);
 }
@@ -222,47 +224,42 @@ nav a:hover {
 
 }
 
-.text {
-    position:  absolute;
-    bottom: 0px;
-    text-align: center;
+
+.services {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
 }
 
 .popup {
-    float: left;
-    width: 31%;
-    margin: 1% 1% 45px 1%;
-}
-
-.popuptext {
-    position:  absolute;
-    bottom: 0px;
-
-}
-
-.popup,
-.popuptext {
-    font-weight: var(--fw-reg);
-    font-size: var(--fs-h3);
+        flex: 33%;
+        max-width: 33%;
+        padding: 0 4px;
 }
 
 .popup img {
+    vertical-align: middle;
     width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 1em;
-
+    border-radius: 10px;
 }
 
-.services {
-    position: relative;
-    overflow: hidden;
-    max-width: 0 auto;
+@media screen and (max-width: 800px) {
+  .popup {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 
+@media screen and (max-width: 600px) {
+  .popup {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 
 .section__title {
-    margin-bottom: .25em;
+    margin-bottom: 1em;
+    text-align: center;
 }
 
 .section__title--portfolio {
@@ -277,6 +274,10 @@ nav a:hover {
     height: 2px;
     margin: 0.5em auto 1em;
     background: currentColor;
+}
+
+.section__subtitle--portfolio {
+    font-weight: var(--fw-bold);
 }
 
 .section__subtitle {
