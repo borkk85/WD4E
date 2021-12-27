@@ -48,6 +48,7 @@ h3 {
 h1 {font-size: var(--fs-h1);}
 h2 {font-size: var(--fs-h2);}
 h3 {font-size: var(--fs-h3);}
+
 header {
     background: var(--clr-accent);
     text-align: center;
@@ -139,7 +140,6 @@ nav a:hover {
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
 }
-
 
 @media screen and (min-width: 800px) {
 
